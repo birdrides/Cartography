@@ -22,6 +22,13 @@ precedencegroup CarthographyPriorityPrecedence {
 }
 
 infix operator  ~: CarthographyPriorityPrecedence
+infix operator ~==: ComparisonPrecedence
+infix operator ~<=: ComparisonPrecedence
+infix operator ~>=: ComparisonPrecedence
+infix operator ~+: AdditionPrecedence
+infix operator ~-: AdditionPrecedence
+infix operator ~*: MultiplicationPrecedence
+infix operator ~/: MultiplicationPrecedence
 
 /// Sets the priority for a constraint.
 ///

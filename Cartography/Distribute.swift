@@ -43,7 +43,7 @@
 
 @discardableResult public func distribute(by amount: CGFloat = 0.0, horizontally items: [SupportsLeadingLayoutProxy & SupportsTrailingLayoutProxy]) -> [NSLayoutConstraint] {
     return reduce(items.map(AnyHorizontalDistributionLayoutProxy.init)) {
-        return $0.trailing == $1.leading - amount
+        return $0.trailing ~== $1.leading ~- amount
     }
 }
 
@@ -73,7 +73,7 @@
 ///
 @discardableResult public func distribute(by amount: CGFloat = 0.0, leftToRight items: [SupportsLeftLayoutProxy & SupportsRightLayoutProxy]) -> [NSLayoutConstraint] {
     return reduce(items.map(AnyLeftToRightDistributionLayoutProxy.init)) {
-        return $0.right == $1.left - amount
+        return $0.right ~== $1.left ~- amount
     }
 }
 
@@ -103,7 +103,7 @@
 ///
 @discardableResult public func distribute(by amount: CGFloat = 0.0, vertically items: [SupportsTopLayoutProxy & SupportsBottomLayoutProxy]) -> [NSLayoutConstraint] {
     return reduce(items.map(AnyVerticalDistributionLayoutProxy.init)) {
-        return $0.bottom == $1.top - amount
+        return $0.bottom ~== $1.top ~- amount
     }
 }
 
@@ -131,7 +131,7 @@
 /// - Returns: An array of `NSLayoutConstraint` instances
 ///
 @discardableResult public func distribute(equalWidth items: [SupportsWidthLayoutProxy]) -> [NSLayoutConstraint] {
-    return reduce(items.map(AnyWidthLayoutProxy.init)) { $0.width == $1.width }
+    return reduce(items.map(AnyWidthLayoutProxy.init)) { $0.width ~== $1.width }
 }
 
 /// Distributes width for all the items.
@@ -157,7 +157,7 @@
 /// - Returns: An array of `NSLayoutConstraint` instances
 ///
 @discardableResult public func distribute(equalHeight items: [SupportsHeightLayoutProxy]) -> [NSLayoutConstraint] {
-    return reduce(items.map(AnyHeightLayoutProxy.init)) { $0.height == $1.height }
+    return reduce(items.map(AnyHeightLayoutProxy.init)) { $0.height ~== $1.height }
 }
 
 /// Distributes height for all the items.

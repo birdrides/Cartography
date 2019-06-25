@@ -25,7 +25,7 @@ private func makeEqual<P: RelativeEquality, T: LayoutProxy>(by attribute: (T) ->
                 current.translatesAutoresizingMaskIntoConstraints = false
             }
 
-            return acc + [ attribute(first) == attribute(current) ]
+            return acc + [ attribute(first) ~== attribute(current) ]
         }
     } else {
         return []
