@@ -12,7 +12,7 @@ import UIKit
 import AppKit
 #endif
 
-public struct Dimension : Property, NumericalEquality, RelativeEquality, NumericalInequality, RelativeInequality, Addition, Multiplication {
+public struct Dimension : LayoutProperty, NumericalEquality, RelativeEquality, NumericalInequality, RelativeInequality, Addition, Multiplication {
     public let attribute: LayoutAttribute
     public let context: Context
     public let item: AnyObject

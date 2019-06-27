@@ -38,7 +38,7 @@
 		54BF29B51A9350170066ED10 /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF29AF1A9348B30066ED10 /* Align.swift */; };
 		54C96A17195063CD000CDD27 /* Cartography.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C96A16195063CD000CDD27 /* Cartography.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54C96A1D195063CD000CDD27 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54C96A11195063CD000CDD27 /* Cartography.framework */; };
-		54C96A30195064A6000CDD27 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C96A2F195064A6000CDD27 /* Property.swift */; };
+		54C96A30195064A6000CDD27 /* LayoutProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C96A2F195064A6000CDD27 /* LayoutProperty.swift */; };
 		54DF9F3319DAD8DA00EE3609 /* Constrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF9F3219DAD8DA00EE3609 /* Constrain.swift */; };
 		54DF9F3419DAD8DD00EE3609 /* Constrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF9F3219DAD8DA00EE3609 /* Constrain.swift */; };
 		54F6A843195C20C200313D24 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F6A838195C20C100313D24 /* Cartography.framework */; };
@@ -51,7 +51,7 @@
 		54F6A858195C213A00313D24 /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E9E881950A29300B16707 /* LayoutProxy.swift */; };
 		54F6A859195C213A00313D24 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FA3A351950FD320094B82A /* Priority.swift */; };
 		54F6A85A195C213A00313D24 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FA3A3B1951A2B60094B82A /* Point.swift */; };
-		54F6A85B195C213A00313D24 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C96A2F195064A6000CDD27 /* Property.swift */; };
+		54F6A85B195C213A00313D24 /* LayoutProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C96A2F195064A6000CDD27 /* LayoutProperty.swift */; };
 		54F6A85C195C213A00313D24 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FA3A411951A8070094B82A /* Size.swift */; };
 		54F6A864195C217800313D24 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6A863195C217800313D24 /* View.swift */; };
 		54F6A865195C226700313D24 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6A863195C217800313D24 /* View.swift */; };
@@ -77,7 +77,7 @@
 		632F09421BF1F127002431A3 /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E9E881950A29300B16707 /* LayoutProxy.swift */; };
 		632F09431BF1F127002431A3 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FA3A3B1951A2B60094B82A /* Point.swift */; };
 		632F09441BF1F127002431A3 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FA3A351950FD320094B82A /* Priority.swift */; };
-		632F09451BF1F127002431A3 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C96A2F195064A6000CDD27 /* Property.swift */; };
+		632F09451BF1F127002431A3 /* LayoutProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C96A2F195064A6000CDD27 /* LayoutProperty.swift */; };
 		632F09461BF1F127002431A3 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FA3A411951A8070094B82A /* Size.swift */; };
 		632F09471BF1F127002431A3 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F6A863195C217800313D24 /* View.swift */; };
 		632F094B1BF1F146002431A3 /* DimensionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C96A23195063CD000CDD27 /* DimensionSpec.swift */; };
@@ -234,7 +234,7 @@
 		54C96A16195063CD000CDD27 /* Cartography.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cartography.h; sourceTree = "<group>"; };
 		54C96A1C195063CD000CDD27 /* Cartography-iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cartography-iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54C96A23195063CD000CDD27 /* DimensionSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DimensionSpec.swift; sourceTree = "<group>"; };
-		54C96A2F195064A6000CDD27 /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		54C96A2F195064A6000CDD27 /* LayoutProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutProperty.swift; sourceTree = "<group>"; };
 		54DF9F3219DAD8DA00EE3609 /* Constrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constrain.swift; sourceTree = "<group>"; };
 		54F6A838195C20C100313D24 /* Cartography.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cartography.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F6A842195C20C200313D24 /* Cartography-Mac-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cartography-Mac-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -427,7 +427,7 @@
 				977C36811F9FAC890057A057 /* AutoresizingMaskLayoutProxy.swift */,
 				54FA3A3B1951A2B60094B82A /* Point.swift */,
 				54FA3A351950FD320094B82A /* Priority.swift */,
-				54C96A2F195064A6000CDD27 /* Property.swift */,
+				54C96A2F195064A6000CDD27 /* LayoutProperty.swift */,
 				54FA3A411951A8070094B82A /* Size.swift */,
 				54F6A863195C217800313D24 /* View.swift */,
 				97E7F0A81F8D598A004857CE /* ViewProxy.swift */,
@@ -856,7 +856,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54C96A30195064A6000CDD27 /* Property.swift in Sources */,
+				54C96A30195064A6000CDD27 /* LayoutProperty.swift in Sources */,
 				54B093971A7165F2008A1102 /* Extensions.swift in Sources */,
 				546E9E891950A29300B16707 /* LayoutProxy.swift in Sources */,
 				54FA3A361950FD320094B82A /* Priority.swift in Sources */,
@@ -916,7 +916,7 @@
 			files = (
 				54F6A85C195C213A00313D24 /* Size.swift in Sources */,
 				9722953F1F950A3000FA4AF9 /* LayoutSupport.swift in Sources */,
-				54F6A85B195C213A00313D24 /* Property.swift in Sources */,
+				54F6A85B195C213A00313D24 /* LayoutProperty.swift in Sources */,
 				549B47B71A581992002498C7 /* Constraint.swift in Sources */,
 				54F6A856195C213A00313D24 /* Edges.swift in Sources */,
 				54F6A858195C213A00313D24 /* LayoutProxy.swift in Sources */,
@@ -992,7 +992,7 @@
 				632F09421BF1F127002431A3 /* LayoutProxy.swift in Sources */,
 				632F09431BF1F127002431A3 /* Point.swift in Sources */,
 				632F09441BF1F127002431A3 /* Priority.swift in Sources */,
-				632F09451BF1F127002431A3 /* Property.swift in Sources */,
+				632F09451BF1F127002431A3 /* LayoutProperty.swift in Sources */,
 				632F09461BF1F127002431A3 /* Size.swift in Sources */,
 				4A3756C91D67445F0036190E /* LayoutSupport.swift in Sources */,
 				632F09471BF1F127002431A3 /* View.swift in Sources */,

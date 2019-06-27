@@ -19,7 +19,7 @@ public typealias LayoutRelation = NSLayoutConstraint.Relation
 public class Context {
     internal var constraints: [Constraint] = []
     
-    internal func addConstraint(_ from: Property, to: Property? = nil, coefficients: Coefficients = Coefficients(), relation: LayoutRelation = .equal) -> NSLayoutConstraint {
+    internal func addConstraint(_ from: LayoutProperty, to: LayoutProperty? = nil, coefficients: Coefficients = Coefficients(), relation: LayoutRelation = .equal) -> NSLayoutConstraint {
         if let fromItem = from.item as? View {
             fromItem.translatesAutoresizingMaskIntoConstraints = false
         }

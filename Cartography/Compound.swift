@@ -14,7 +14,7 @@ import AppKit
 
 public protocol Compound {
     var context: Context { get }
-    var properties: [Property] { get }
+    var properties: [LayoutProperty] { get }
 }
 
 /// Compound properties conforming to this protocol can use the `==` operator

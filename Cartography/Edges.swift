@@ -14,9 +14,9 @@ import AppKit
 
 public struct Edges: Compound, RelativeCompoundEquality, RelativeCompoundInequality {
     public let context: Context
-    public let properties: [Property]
+    public let properties: [LayoutProperty]
 
-    internal init(_ context: Context, _ properties: [Property]) {
+    internal init(_ context: Context, _ properties: [LayoutProperty]) {
         guard properties.count == 4 else {
             fatalError("No valid edges were used")
         }

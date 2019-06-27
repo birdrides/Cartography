@@ -1,5 +1,5 @@
 //
-//  Property.swift
+//  LayoutProperty.swift
 //  Cartography
 //
 //  Created by Robert Böhnke on 17/06/14.
@@ -16,7 +16,7 @@ import AppKit
 public typealias LayoutAttribute = NSLayoutConstraint.Attribute
 #endif
 
-public protocol Property {
+public protocol LayoutProperty {
     var attribute: LayoutAttribute { get }
     var context: Context { get }
     var item: AnyObject { get } //type-erased Layoutitem
@@ -26,7 +26,7 @@ public protocol Property {
 
 /// Properties conforming to this protocol can use the `==` operator with
 /// numerical constants.
-public protocol NumericalEquality : Property { }
+public protocol NumericalEquality : LayoutProperty { }
 
 /// Declares a property equal to a numerical constant.
 ///
@@ -42,7 +42,7 @@ public protocol NumericalEquality : Property { }
 
 /// Properties conforming to this protocol can use the `==` operator with other
 /// properties of the same type.
-public protocol RelativeEquality : Property { }
+public protocol RelativeEquality : LayoutProperty { }
 
 /// Declares a property equal to a the result of an expression.
 ///
@@ -70,7 +70,7 @@ public protocol RelativeEquality : Property { }
 
 /// Properties conforming to this protocol can use the `<=` and `>=` operators
 /// with numerical constants.
-public protocol NumericalInequality : Property { }
+public protocol NumericalInequality : LayoutProperty { }
 
 /// Declares a property less than or equal to a numerical constant.
 ///
@@ -98,7 +98,7 @@ public protocol NumericalInequality : Property { }
 
 /// Properties conforming to this protocol can use the `<=` and `>=` operators
 /// with other properties of the same type.
-public protocol RelativeInequality : Property { }
+public protocol RelativeInequality : LayoutProperty { }
 
 /// Declares a property less than or equal to another property.
 ///
@@ -150,7 +150,7 @@ public protocol RelativeInequality : Property { }
 
 // MARK: Addition
 
-public protocol Addition : Property { }
+public protocol Addition : LayoutProperty { }
 
 public func ~+ <P: Addition>(c: CGFloat, rhs: P) -> Expression<P> {
     return Expression(rhs, [ Coefficients(1, c) ])
@@ -197,7 +197,7 @@ public func ~- <P: Addition>(lhs: Expression<P>, rhs: CGFloat) -> Expression<P> 
 #endif
 // MARK: Multiplication
 
-public protocol Multiplication : Property { }
+public protocol Multiplication : LayoutProperty { }
 
 public func ~* <P: Multiplication>(m: CGFloat, rhs: Expression<P>) -> Expression<P> {
     return Expression(rhs.value, rhs.coefficients.map { $0 * m })
