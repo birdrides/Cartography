@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		09F7751A581957EA262BC6A4 /* Pods_TestPods_Cartography_Mac_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 825625A8CCFA9B2B102BDDDB /* Pods_TestPods_Cartography_Mac_Tests.framework */; };
 		1B319C622162740100DD91D4 /* ViewProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B319C612162740100DD91D4 /* ViewProxyTests.swift */; };
+		353CA710232DB43B00F82294 /* ConstrainViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353CA70F232DB43B00F82294 /* ConstrainViews.swift */; };
 		40F7238205F9E56862357198 /* Pods_TestPods_Cartography_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C63D81EB2304A489BE29E6A /* Pods_TestPods_Cartography_iOS_Tests.framework */; };
 		4A3756C91D67445F0036190E /* LayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66AF7EED1CABEABC00249E27 /* LayoutSupport.swift */; };
 		54143E4E1A93991D00208182 /* Distribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5467916E1A93962000DC9BF7 /* Distribute.swift */; };
@@ -210,6 +211,7 @@
 		0C63D81EB2304A489BE29E6A /* Pods_TestPods_Cartography_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPods_Cartography_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		125531F897589C40A2E6968E /* Pods-TestPods-Cartography-iOS-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPods-Cartography-iOS-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestPods-Cartography-iOS-Tests/Pods-TestPods-Cartography-iOS-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1B319C612162740100DD91D4 /* ViewProxyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProxyTests.swift; sourceTree = "<group>"; };
+		353CA70F232DB43B00F82294 /* ConstrainViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstrainViews.swift; sourceTree = "<group>"; };
 		3C61A3F684FD20F5E1B1F8D1 /* Pods-TestPods-Cartography-Mac-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPods-Cartography-Mac-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestPods-Cartography-Mac-Tests/Pods-TestPods-Cartography-Mac-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		45CEEFB5D80398843533851A /* Pods-TestPods-Cartography-tvOS-tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPods-Cartography-tvOS-tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestPods-Cartography-tvOS-tests/Pods-TestPods-Cartography-tvOS-tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5435B8B41AD8610300B805F1 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
@@ -414,6 +416,7 @@
 				54DF9F3219DAD8DA00EE3609 /* Constrain.swift */,
 				547BC85619E2EB9B007BEE9E /* Constraint.swift */,
 				54B093941A715E52008A1102 /* ConstraintGroup.swift */,
+				353CA70F232DB43B00F82294 /* ConstrainViews.swift */,
 				547BC85419E2DD06007BEE9E /* Context.swift */,
 				546E9E8C1950A31100B16707 /* Dimension.swift */,
 				5467916E1A93962000DC9BF7 /* Distribute.swift */,
@@ -874,6 +877,7 @@
 				546E9E911950A76C00B16707 /* Edge.swift in Sources */,
 				54FA3A421951A8070094B82A /* Size.swift in Sources */,
 				54FA3A3C1951A2B60094B82A /* Point.swift in Sources */,
+				353CA710232DB43B00F82294 /* ConstrainViews.swift in Sources */,
 				97D17C901F8E73F200C57CE1 /* LayoutSupportProxy.swift in Sources */,
 				54F6A864195C217800313D24 /* View.swift in Sources */,
 				546E9E8F1950A33700B16707 /* Coefficients.swift in Sources */,
