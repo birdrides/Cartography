@@ -30,6 +30,10 @@ public class ConstraintGroup {
 
     }
 
+    public func replace(withNativeConstraints constraints: [NSLayoutConstraint]) {
+        replaceConstraints(constraints.map { Constraint($0) })
+    }
+
     internal func replaceConstraints(_ constraints: [Constraint]) {
         for constraint in self.constraints {
             constraint.uninstall()
